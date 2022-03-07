@@ -1,14 +1,21 @@
 {
   "name": "wok-chani-modal",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "modal.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
   },
   "author": "Nourdine",
   "license": "ISC",
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11"
   }
 }

@@ -6,6 +6,11 @@ npm install wok-chani-modal
 
 import {Modal} from 'wok-chani-modal'
 
+## Dépendance
+
+React
+Babel
+
 ### Exemple
 
 <Modal text = 'Employé ajouté avec succés!!!'
