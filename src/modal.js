@@ -1,6 +1,6 @@
-import react from "react"
+import React from "react"
 
-const Modal = ({ text, isOpen, toggleClick }) => {
+export default function Modal ({ text, isOpen, toggleClick }) {
   return (
     <div style={{ display: isOpen ? "block" : "none" }}>
       <div className="opacity"
@@ -45,4 +45,3 @@ const Modal = ({ text, isOpen, toggleClick }) => {
     </div>
   )
 }
-module.exports.Modal = Modal

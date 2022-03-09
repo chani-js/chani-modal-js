@@ -1,18 +1,23 @@
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = Modal;
+
 var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var Modal = function Modal(_ref) {
+function Modal(_ref) {
   var text = _ref.text,
       isOpen = _ref.isOpen,
       toggleClick = _ref.toggleClick;
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/_react["default"].createElement("div", {
     style: {
       display: isOpen ? "block" : "none"
     }
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "opacity",
     style: {
       width: '100%',
@@ -24,7 +29,7 @@ var Modal = function Modal(_ref) {
       bottom: 0,
       right: 0
     }
-  }), /*#__PURE__*/React.createElement("div", {
+  }), /*#__PURE__*/_react["default"].createElement("div", {
     className: "modal-text",
     style: {
       width: '20%',
@@ -36,11 +41,11 @@ var Modal = function Modal(_ref) {
       borderRadius: '5px',
       backgroundColor: "white"
     }
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/_react["default"].createElement("div", {
     style: {
       position: 'relative'
     }
-  }, /*#__PURE__*/React.createElement("span", {
+  }, /*#__PURE__*/_react["default"].createElement("span", {
     onClick: toggleClick,
     style: {
       position: "absolute",
@@ -51,6 +56,4 @@ var Modal = function Modal(_ref) {
       padding: "5px 10px"
     }
   }, " X"), text)));
-};
-
-module.exports.Modal = Modal;
+}
