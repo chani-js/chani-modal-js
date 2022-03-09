@@ -12,50 +12,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 function Modal(_ref) {
   var text = _ref.text,
       isOpen = _ref.isOpen,
-      toggleClick = _ref.toggleClick;
+      toggleClick = _ref.toggleClick,
+      className = _ref.className;
   return /*#__PURE__*/_react["default"].createElement("div", {
+    className: className,
     style: {
       display: isOpen ? "block" : "none"
     }
   }, /*#__PURE__*/_react["default"].createElement("div", {
-    className: "opacity",
-    style: {
-      width: '100%',
-      position: "absolute",
-      opacity: '0.8',
-      backgroundColor: 'Black',
-      top: 0,
-      left: 0,
-      bottom: 0,
-      right: 0,
-      zIndex: 50
-    }
+    className: "".concat(className, "-voile")
   }), /*#__PURE__*/_react["default"].createElement("div", {
-    className: "modal-text",
-    style: {
-      width: '20%',
-      position: "absolute",
-      top: '45%',
-      left: '40%',
-      border: '1px solid black',
-      padding: '10px',
-      borderRadius: '5px',
-      backgroundColor: "white",
-      zIndex: 60
-    }
+    className: "".concat(className, "-content")
   }, /*#__PURE__*/_react["default"].createElement("div", {
-    style: {
-      position: 'relative'
-    }
+    className: "".concat(className, "-text")
   }, /*#__PURE__*/_react["default"].createElement("span", {
-    onClick: toggleClick,
-    style: {
-      position: "absolute",
-      top: "-25px",
-      right: "-15px",
-      backgroundColor: "white",
-      borderRadius: "100px",
-      padding: "5px 10px"
-    }
+    className: "".concat(className, "-close"),
+    onClick: toggleClick
   }, " X"), text)));
 }
