@@ -4,7 +4,7 @@ npm install wok-chani-modal
 
 ## Utilisation
 
-import {Modal} from 'wok-chani-modal'
+import Modal from 'wok-chani-modal'
 
 ## Dépendance
 

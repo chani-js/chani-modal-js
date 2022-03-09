@@ -27,7 +27,8 @@ function Modal(_ref) {
       top: 0,
       left: 0,
       bottom: 0,
-      right: 0
+      right: 0,
+      zIndex: 50
     }
   }), /*#__PURE__*/_react["default"].createElement("div", {
     className: "modal-text",
@@ -39,7 +40,8 @@ function Modal(_ref) {
       border: '1px solid black',
       padding: '10px',
       borderRadius: '5px',
-      backgroundColor: "white"
+      backgroundColor: "white",
+      zIndex: 60
     }
   }, /*#__PURE__*/_react["default"].createElement("div", {
     style: {

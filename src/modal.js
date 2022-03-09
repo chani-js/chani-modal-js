@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Modal ({ text, isOpen, toggleClick }) {
+export default function Modal({ text, isOpen, toggleClick }) {
   return (
     <div style={{ display: isOpen ? "block" : "none" }}>
       <div className="opacity"
@@ -13,7 +13,8 @@ export default function Modal ({ text, isOpen, toggleClick }) {
             top: 0,
             left: 0,
             bottom: 0,
-            right: 0
+            right: 0,
+            zIndex: 50
           }}>
 
       </div>
@@ -26,7 +27,8 @@ export default function Modal ({ text, isOpen, toggleClick }) {
           border: '1px solid black',
           padding: '10px',
           borderRadius: '5px',
-          backgroundColor: "white"
+          backgroundColor: "white",
+          zIndex: 60
         }}>
         <div style={{ position: 'relative' }}>
           <span onClick={toggleClick}
@@ -40,7 +42,6 @@ export default function Modal ({ text, isOpen, toggleClick }) {
             }}> X</span>
           {text}
         </div>
-
       </div>
     </div>
   )
