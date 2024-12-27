@@ -21,7 +21,7 @@ Babel
 ### Divers
 
 Pour le moment le style est intégré directement dans la modal, rien ne vous empeche de styliser le contenu a votre guise
-en y incluant un fichier css
+en y incluant un fichier css test
 
 
 
